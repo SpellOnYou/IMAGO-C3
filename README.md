@@ -13,12 +13,19 @@ cp ./backend/.env.example ./backend/.env
 docker compose up –build
 ```
 
+After deployment is successfully done by docker, services are available through:
+
+- backend: `http://localhost:8000`
+- frontend: `http://localhost:3000`
+
 Testing can be done inside the running container (unittest, backend only)
 
 ```shell
 docker exec -it app-backend-1 poetry run pytest /backend/tests
 ```
 ---
+
+
 
 - **Tools and Frameworks Disclaimer**: ReactJS is chosen for the frontend and FastAPI (Python) for the backend. Poetry helps with dependency management, while Docker and CodeSandbox simplify deployment. Testing is integrated into the development lifecycle via Pytest. Note that the chosen tools and frameworks are based on personal preference and do not imply that they are superior to alternatives.
 
