@@ -1,5 +1,7 @@
 ## IMAGO Coding Challenge
 
+First of all, I found this task pretty engaging, and it left me several areas I would like to further work on. And I am really happy for that! 🤗 
+
 ### How to run the application?
 
 I recommend you to clone the repository locally and run the docker referring the following command.
@@ -7,7 +9,7 @@ Set the environment variables for ElasticSearch and install the system.
 
 
 ```shell
-cp .env.example .env
+cp ./backend/.env.example ./backend/.env
 docker compose up –build
 ```
 
